@@ -1,0 +1,41 @@
+.project--container {
+  padding: 4rem 1.6rem;
+}
+
+.project--content_lore {
+  padding: 4rem 0;
+}
+
+.project--content_lore h5 {
+  background: var(--black);
+  color: var(--primary-color);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 39px;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 1.6rem;
+  box-shadow: -4px 4px 0px #FFF;
+  width: 25.8rem;
+  height: 4.7rem;
+}
+
+.project--content_lore p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.005rem;
+  margin-bottom: 1.6rem;
+  width: 32.8rem;
+  height: 10.4rem;
+}
+
+.project--actions {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.8rem;
+  padding-bottom: 4rem;
+}
+
+.project--actions button:first-child {
+  margin-bottom: 1.6rem;
+}
