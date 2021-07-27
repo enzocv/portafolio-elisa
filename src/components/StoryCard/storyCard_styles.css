@@ -1,0 +1,43 @@
+.storyCard--wrapper{
+  padding: 4rem 0 8rem;
+  padding: 2.4rem;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(39.7657px);
+  border-radius: 24px;
+  
+  /* TODO: border top-left ingore border-radius  */
+  /* border: 4px solid transparent;
+  border-image-source: radial-gradient(83.14% 78.52% at -12.32% -18.69%, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1; */
+}
+
+.storyCard--container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.storyCard--container img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 12.9rem;
+}
+
+.storyCard--container .storyCard--container_title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.005rem;
+  line-height: 26px;
+
+  padding: 2.4rem 0;
+}
+
+.storyCard--container .storyCard--container_caption {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  line-height: 19px;
+  opacity: 0.5;
+}
