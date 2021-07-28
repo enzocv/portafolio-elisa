@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { mapImage } from '../../utils/mapImage'
 import './button_styles.css'
 
-const Button = ({ title, type, withIcon, icon }) => {
+const Button = ({ title, type, withIcon, icon, form }) => {
+  const [buttonForm, setButtonForm] = useState('');
+
+  useEffect(() => {
+    if (form) setButtonForm('buttonForm')
+  }, [buttonForm, form]);
+
   return (
     <>
-      <button className={`button ${type}`} >
+      <button className={`button ${type} ${buttonForm}`} >
         {withIcon ? <img src={mapImage(icon)} alt='icon' /> : null}
         {title}
       </button>
@@ -13,4 +19,4 @@ const Button = ({ title, type, withIcon, icon }) => {
   )
 }
 
-export default Button
+export default Button;

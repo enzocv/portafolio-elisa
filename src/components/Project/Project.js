@@ -5,7 +5,7 @@ import './project_styles.css'
 
 import { mapImage } from '../../utils/mapImage'
 
-const Project = ({ image, title, lore, storyImg, storyTitle, storyCaptio }) => {
+const Project = ({ image, title, lore, storyImg, storyTitle, storyCaption }) => {
   return (
     <>
       <div className='project--container'>
@@ -20,7 +20,7 @@ const Project = ({ image, title, lore, storyImg, storyTitle, storyCaptio }) => {
             </div>
           </div>
         </div>
-        <StoryCard storyImg={storyImg} storyTitle={storyTitle} storyCaptio={storyCaptio} />
+        <StoryCard storyImg={storyImg} storyTitle={storyTitle} storyCaption={storyCaption} />
       </div>
     </>
   )
